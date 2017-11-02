@@ -1,3 +1,23 @@
 // Place all the styles related to the Review controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+div.new-review {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+strong {
+  color: #B82A18;
+}
+
+textarea {
+  height: 185px;
+  width: 500px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}

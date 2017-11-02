@@ -1,3 +1,46 @@
 // Place all the styles related to the Restaurant controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+ul.restaurants-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+li.restaurant-each, label {
+  margin-bottom:  20px;
+  font-size: 120%;
+}
+li.restaurant-each:last-of-type {
+  margin-bottom: 10px;
+}
+
+a.new-restaurant {
+  padding: 15px 30px;
+  background-color:  #881F12;
+  border-radius: 5px;
+  opacity: 0.8;
+  color: white;
+}
+
+a.new-restaurant:hover {
+  opacity: 1;
+  // background-color: #E3341D;
+  transition: 0.5s;
+  color: white;
+  box-shadow: 0 0 20px #B82A18;
+}
+
+div.new-restaurant-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+

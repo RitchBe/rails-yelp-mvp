@@ -1,9 +1,14 @@
-<h2>New review for <%= @restaurant.name %></h2>
+<div class="new-review">
+<h2>New review for <strong><%= @restaurant.name %></strong></h2>
 
 <%= form_for([@restaurant, @review]) do |f| %>
-  <%= f.label :content %>
+<div class="text-center">
+  <%= f.label :content %><br>
   <%= f.text_area :content %>
-  <%= f.label :rating %>
-  <%= f.select :rating, [0,1,2,3,4,5] %>
-  <%= f.submit %>
+</div>
+<div class="text-center">
+  <%= f.select :rating, [0,1,2,3,4,5], {include_blank: 'Rating'} %>
+  <%= f.submit class: "submit-btn"%>
+</div>
 <% end %>
+</div>

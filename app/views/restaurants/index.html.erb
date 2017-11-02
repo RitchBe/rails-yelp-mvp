@@ -1,10 +1,10 @@
 <h2>Restaurant List</h2>
-<ul>
+<ul class="restaurants-list">
   <% @restaurants.each do |r| %>
-  <li><%= r.name %> |
-    <%= r.category.capitalize %> |
+  <li class="restaurant-each text-center"><%= r.name %> |
+    <%= r.category.capitalize %> <br>
     <%= link_to "More details", restaurant_path(id: r.id) %>
   </li>
   <% end %>
-  <%= link_to "Add a new Restaurant", new_restaurant_path  %>
 </ul>
+  <%= link_to "Add a new Restaurant", new_restaurant_path, class: "new-restaurant"  %>
